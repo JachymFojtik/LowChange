@@ -6,8 +6,8 @@ namespace LowChange
 
     class Program
     {
-        static Dictionary<int,int> coinCount = new Dictionary<int, int> { {50,0}, { 20, 0 }, { 10, 0 }, { 5, 0 }, { 2, 0 }, { 1, 0 } };
-        static void LowestChange(int x, int y)
+        public static Dictionary<int,int> coinCount = new Dictionary<int, int> { {50,0}, { 20, 0 }, { 10, 0 }, { 5, 0 }, { 2, 0 }, { 1, 0 } };
+        public static void LowestChange(int x, int y)
         {
             int back = x - y;
             int high = 50;
