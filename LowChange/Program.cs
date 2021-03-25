@@ -9,8 +9,10 @@ namespace LowChange
         public static Dictionary<int,int> coinCount = new Dictionary<int, int> { {50,0}, { 20, 0 }, { 10, 0 }, { 5, 0 }, { 2, 0 }, { 1, 0 } };
         public static void LowestChange(int x, int y)
         {
+            foreach (var item in coinCount) item.Value = 0;
             int back = x - y;
             int high = 50;
+
             if (back>=1)
             {
                 foreach (var item in coinCount)
